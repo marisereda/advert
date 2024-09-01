@@ -1,0 +1,189 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background-color: #111111;
+  background-image: url('../images/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  font-family: inherit;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+svg {
+  display: block;
+}
+
+.frame {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  max-width: 1876px;
+  font-family: SamsungSharp;
+  font-weight: 500;
+  border: 4px solid #000000;
+  overflow: hidden;
+}
+
+.frame__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -2;
+}
+
+.frame__background-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.2) translate(125px, -75px);
+}
+
+.frame__left {
+  position: relative;
+  flex-basis: 54%;
+  padding: 68px 100px 88px 78px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.frame__left-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.frame__brand-logo {
+  margin-bottom: 66px;
+  opacity: 0;
+}
+
+.frame__title {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.28;
+  overflow: hidden;
+}
+
+.frame__kitchn-logo {
+  margin-right: 5px;
+}
+
+.frame__info-wrapper {
+  overflow: hidden;
+}
+
+.frame__info {
+  position: relative;
+  display: block;
+  margin-bottom: 66px;
+  min-height: 286px;
+  font-size: 28px;
+  line-height: 1.64;
+  opacity: 0;
+}
+
+.frame__link {
+  color: #808080;
+}
+
+.paginator {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 32px;
+  line-height: 48px;
+  opacity: 0;
+}
+
+.paginator__text {
+  min-width: 60px;
+  text-align: center;
+}
+
+.paginator__button {
+  transition: transform 500ms, color 500ms;
+}
+
+.paginator__button:active {
+  transform: scale(0.5);
+  color: #808080;
+}
+
+.frame__paginator {
+  margin-bottom: 24px;
+}
+
+.frame__button {
+  display: inline-block;
+  padding: 42px 56px;
+  font-family: SamsungOne;
+  font-size: 42px;
+  line-height: 0.62;
+  text-transform: uppercase;
+  border: 4px solid #000000;
+  border-radius: 9999px;
+  opacity: 0;
+  transition: transform 500ms;
+  will-change: transform;
+}
+
+.frame__right {
+  position: relative;
+  flex-basis: 46%;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.frame__model-logo {
+  position: absolute;
+  z-index: 2;
+  top: 70px;
+  right: 80px;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+}
+
+.frame__image {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

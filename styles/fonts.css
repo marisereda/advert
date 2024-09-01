@@ -1,0 +1,17 @@
+@font-face {
+  font-family: SamsungOne;
+  font-weight: 400;
+  src: url('../fonts/samsung-one-400.ttf');
+}
+
+@font-face {
+  font-family: SamsungSharp;
+  font-weight: 500;
+  src: url('../fonts/samsung-sharpsans-500.otf');
+}
+
+@font-face {
+  font-family: SamsungSharp;
+  font-weight: 700;
+  src: url('../fonts/samsung-sharpsans-700.otf');
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/fonts.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="frame">
+      <div class="frame__background">
+        <img
+          class="frame__background-image"
+          src="images/frame-bg1.jpg"
+          alt="room image"
+        />
+      </div>
+      <p class="frame__model-logo">Bespoke Jet™</p>
+      <div class="frame__left">
+        <div class="frame__left-background"></div>
+        <img
+          class="frame__brand-logo"
+          src="images/samsung-logo.png"
+          alt="samsung logo"
+        />
+        <h3 class="frame__title title">
+          <span class="title__line1">See why the Bespoke Jet™</span>
+          <span class="title__line2">is “so good” it made this </span>
+          <span class="title__line3">
+            <img
+              class="frame__kitchn-logo"
+              src="images/kitchn-logo.png"
+              alt="kitchn logo"
+            />
+            journalist cry
+          </span>
+        </h3>
+        <div class="frame__info-wrapper">
+          <p class="frame__info">
+            <span>
+              “Because it’s so nice-looking, it can live right in the kitchen.
+              No more hauling a vacuum up and down the basement stairs on the
+              daily.”
+            </span>
+            <a class="frame__link" href="#" target="_blank">Read more…</a>
+          </p>
+        </div>
+        <div class="frame__paginator paginator">
+          <button id="prev" class="paginator__button">
+            <svg width="48" height="48" viewBox="0 0 1024 1024">
+              <path
+                fill="currentColor"
+                d="M658 316l-196 196 196 196-60 60-256-256 256-256z"
+              ></path>
+            </svg>
+          </button>
+          <span class="paginator__text">1/5</span>
+          <button id="next" class="paginator__button">
+            <svg width="48" height="48" viewBox="0 0 1024 1024">
+              <path
+                fill="currentColor"
+                d="M426 256l256 256-256 256-60-60 196-196-196-196z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <a class="frame__button" href="#" target="_blank">Shop now</a>
+      </div>
+      <div class="frame__right">
+        <img class="frame__image" src="images/page1.jpg" alt="dusters" />
+        <img class="frame__image" src="images/page2.jpg" alt="dusters" />
+        <img class="frame__image" src="images/page3.jpg" alt="dusters" />
+        <img class="frame__image" src="images/page4.jpg" alt="dusters" />
+        <img class="frame__image" src="images/page5.jpg" alt="dusters" />
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script type="module" src="js/index.mjs"></script>
+  </body>
+</html>
