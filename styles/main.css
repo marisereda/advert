@@ -134,7 +134,7 @@ svg {
 }
 
 .paginator__button {
-  transition: transform 500ms, color 500ms;
+  transition: transform 300ms, color 300ms;
 }
 
 .paginator__button:active {

@@ -28,19 +28,19 @@ let buttonTween;
 
 //EventListeners
 refs.prevButton.addEventListener('click', () => {
-  paginatorTween.revert();
+  paginatorTween?.revert();
   paginatorTween = null;
   prevPage();
   startAutoPagination();
 });
 refs.nextButton.addEventListener('click', () => {
-  paginatorTween.revert();
+  paginatorTween?.revert();
   paginatorTween = null;
   nextPage();
   startAutoPagination();
 });
 refs.frameButton.addEventListener('mouseenter', () => {
-  buttonTween.revert();
+  buttonTween?.revert();
 });
 refs.frameButton.addEventListener('mouseleave', () => {
   startButtonTween();
@@ -112,14 +112,12 @@ function startAutoPagination() {
       startPaginatorTween();
     }
     nextPage();
-  }, 5000);
+  }, 3000);
 }
 
 function startPaginatorTween() {
-  console.log('🚧', '!!!');
-
   paginatorTween = gsap.to([refs.prevButton, refs.nextButton], {
-    scale: 1.3,
+    scale: 1.4,
     duration: 1,
     repeat: -1,
     ease: 'power1.out',
