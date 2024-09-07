@@ -139,7 +139,16 @@ function prevPage() {
   currentPageIndex = currentPageIndex === 0 ? 4 : currentPageIndex - 1;
   refs.frameInfoText.innerHTML = frameInfo[currentPageIndex];
   refs.paginatorText.innerHTML = `${currentPageIndex + 1}/5`;
-  gsap.from(refs.frameInfo, { x: -100, duration: 0.5 });
+  gsap.from(refs.frameInfo, {
+    x: -100,
+    duration: 0.5,
+    onStart: () => {
+      refs.prevButton.setAttribute('disabled', '');
+    },
+    onComplete: () => {
+      refs.prevButton.removeAttribute('disabled');
+    },
+  });
   changeImage();
 }
 
@@ -147,7 +156,16 @@ function nextPage() {
   currentPageIndex = currentPageIndex === 4 ? 0 : currentPageIndex + 1;
   refs.frameInfoText.innerHTML = frameInfo[currentPageIndex];
   refs.paginatorText.innerHTML = `${currentPageIndex + 1}/5`;
-  gsap.from(refs.frameInfo, { x: 100, duration: 0.5 });
+  gsap.from(refs.frameInfo, {
+    x: 100,
+    duration: 0.5,
+    onStart: () => {
+      refs.nextButton.setAttribute('disabled', '');
+    },
+    onComplete: () => {
+      refs.nextButton.removeAttribute('disabled');
+    },
+  });
   changeImage();
 }
 
