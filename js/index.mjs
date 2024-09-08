@@ -14,6 +14,8 @@ const refs = {
   paginatorText: document.querySelector('.paginator__text'),
   paginator: document.querySelector('.paginator'),
   frameRight: document.querySelector('.frame__right'),
+  // frameImage: document.querySelector('.frame__image'),
+
   frameInfoText: document.querySelector('.frame__info span'),
   frameInfo: document.querySelector('.frame__info'),
   frameBackground: document.querySelector('.frame__background-image'),
@@ -100,6 +102,10 @@ function startInitialAnimation() {
     opacity: 1,
     duration: 1,
   });
+  // tl.to(refs.frameImage, {
+  //   opacity: 1,
+  //   duration: 1,
+  // });
   tl.to(refs.frameBackground, { opacity: 0, duration: 1 }, '<=0.5');
 
   tl.call(startAutoPagination);

@@ -47,6 +47,17 @@ svg {
   overflow: hidden;
 }
 
+@media screen and (max-width: 1919px) {
+  .frame {
+    flex-direction: column-reverse;
+    max-width: 1023px;
+  }
+
+  .frame__right-wrapper {
+    position: relative;
+  }
+}
+
 .frame__background {
   position: absolute;
   top: 0;
@@ -64,12 +75,52 @@ svg {
   transform: scale(1.2) translate(125px, -75px);
 }
 
+@media screen and (max-width: 1919px) {
+  .frame__background-image {
+    transform: scale(1) translate(0px, 0px);
+  }
+}
+
+.frame .frame__model-logo {
+  display: block;
+}
+
+@media screen and (max-width: 1919px) {
+  .frame .frame__model-logo {
+    display: none;
+  }
+}
+
 .frame__left {
   position: relative;
   flex-basis: 54%;
   padding: 68px 100px 88px 78px;
   background-color: transparent;
   overflow: hidden;
+}
+
+@media screen and (max-width: 1919px) {
+  .frame__left {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .frame__left {
+    padding: 48px 80px 68px 58px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .frame__left {
+    padding: 38px 70px 58px 48px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .frame__left {
+    padding: 28px 50px 48px 28px;
+  }
 }
 
 .frame__left-background {
@@ -86,6 +137,12 @@ svg {
   opacity: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .frame__brand-logo {
+    height: 26px;
+  }
+}
+
 .frame__title {
   display: flex;
   flex-direction: column;
@@ -96,8 +153,39 @@ svg {
   overflow: hidden;
 }
 
+@media screen and (max-width: 1023px) {
+  .frame__title {
+    font-size: 38px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .frame__title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .frame__title {
+    font-size: 22px;
+  }
+}
+
 .frame__kitchn-logo {
   margin-right: 5px;
+}
+
+@media screen and (max-width: 1023px) {
+  .frame__kitchn-logo {
+    height: 38px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .frame__kitchn-logo {
+    height: 24px;
+  }
 }
 
 .frame__info-wrapper {
@@ -114,6 +202,24 @@ svg {
   opacity: 0;
 }
 
+@media screen and (max-width: 1023px) {
+  .frame__info {
+    margin-bottom: 36px;
+    min-height: 256px;
+    font-size: 22px;
+    line-height: 1.44;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .frame__info {
+    margin-bottom: 26px;
+    min-height: 236px;
+    font-size: 16px;
+    line-height: 1.44;
+  }
+}
+
 .frame__link {
   color: #808080;
 }
@@ -128,6 +234,13 @@ svg {
   opacity: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .paginator {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
 .paginator__text {
   min-width: 60px;
   text-align: center;
@@ -140,6 +253,13 @@ svg {
 .paginator__button:active {
   transform: scale(0.5);
   color: #808080;
+}
+
+@media screen and (max-width: 767px) {
+  .paginator__button svg {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .frame__paginator {
@@ -160,6 +280,21 @@ svg {
   will-change: transform;
 }
 
+@media screen and (max-width: 1023px) {
+  .frame__button {
+    padding: 32px 46px;
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .frame__button {
+    padding: 22px 36px;
+    font-size: 24px;
+    border: 2px solid #000000;
+  }
+}
+
 .frame__right {
   position: relative;
   flex-basis: 46%;
@@ -167,15 +302,59 @@ svg {
   opacity: 0;
 }
 
+@media screen and (max-width: 1919px) {
+  .frame__right {
+    min-height: 1049px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .frame__right {
+    min-height: 950px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .frame__right {
+    min-height: 750px;
+  }
+}
+
 .frame__model-logo {
   position: absolute;
-  z-index: 2;
+  z-index: 10;
   top: 70px;
   right: 80px;
   font-size: 52px;
   font-weight: 700;
   line-height: 1;
   color: white;
+}
+
+@media screen and (max-width: 767px) {
+  .frame__model-logo {
+    font-size: 32px;
+    top: 50px;
+    right: 60px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .frame__model-logo {
+    font-size: 32px;
+    top: 50px;
+    right: 30px;
+  }
+}
+
+.frame__right .frame__model-logo {
+  display: none;
+}
+
+@media screen and (max-width: 1919px) {
+  .frame__right .frame__model-logo {
+    display: block;
+  }
 }
 
 .frame__image {
@@ -186,4 +365,16 @@ svg {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+@media screen and (max-width: 1919px) {
+  .frame__image {
+    min-height: 1049;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .frame__image {
+    display: block;
+  }
 }
